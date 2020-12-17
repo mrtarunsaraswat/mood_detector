@@ -141,11 +141,6 @@ class _MoodDetectorState extends State<MoodDetector> {
                                         child: Text("ERROR: ${snapShot.error}"),
                                       );
                                     }
-                                    else if (snapShot.data.emotions.isEmpty) {
-                                      return Center(
-                                        child: Text("No mood detected"),
-                                      );
-                                    }
                                     else {
                                       if (snapShot.hasData &&
                                           snapShot.data.emotions.isNotEmpty)
